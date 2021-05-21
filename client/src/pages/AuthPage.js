@@ -21,14 +21,18 @@ export const AuthPage = () => {
 
   const registerHandler = async () => {
     try {
-      const data = await request('/api/auth/register', 'POST', {...form})
-      console.log('Data', data);
+      const data = await request('/api/auth/register', 'POST', {...form});
+      message(data.message);
     } catch (error) {}
   }
 
   const loginHandler = async () => {
-
+    try {
+      const data = await request('/api/auth/login', 'POST', {...form});
+      message(data.message);
+    } catch (error) {}
   }
+  
   return (
     <div className="row">
       <div className="col s6 offset-s3">
