@@ -1,0 +1,7 @@
+
+{
+    "port": 5000,
+    "jwtSecret": "vlad",
+    "mongoUri": "mongodb+srv://vlad:sC1CfxUp3LqVTmJ2@cluster0.hlhce.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "baseUrl": "http://localhost:5000"
+  }
